@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>咖啡OrTea</title>
+</head>
+<body>
+<script>
+// 类是一个抽象概念，一类对象的属性和方法的模板
+class Coffee{
+    constructor(type) {
+        this.type = type;
+        this.boliWater
+        this.brewCoffeeGriends();
+        this.pourIncup();
+        this.addSugarAndMik();
+        console.log('开始泡一杯咖啡')
+    }
+    boliWater() {
+        console.log('把水烧到100度')
+    }
+    brewCoffeeGriends() {
+        console.log('用沸水冲泡咖啡')
+    }
+    pourIncup() {
+        console.log('把咖啡到进杯子')
+    }
+    addSugarAndMik() {
+        console.log('加糖和牛奶')
+        console.log('泡好了一杯'+this.type)
+    }
+}
+const cof = new Coffee ('卡布奇诺');
+
+const cof2 = new Coffee ('美式咖啡')
+
+
+</script>
+</body>
+</html>
