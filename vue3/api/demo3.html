@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <!-- 根节点， 挂载点 -->
+    <div id="app"></div>
+    <script>
+    const reverse = function (headNode) {
+  // headNode 包含 value 和 next 属性，value 表示节点值，next 表示下一节点
+  var pre=null;
+  var next=null;
+  while(headNode!=null){
+    next=headNode.next;
+    headNode.next=pre;
+    pre=headNode;
+    headNode=next
+  }
+  return headNode;
+};
+
+console.log(headNode('12345'));
+
+    </script>
+</body>
+</html>
